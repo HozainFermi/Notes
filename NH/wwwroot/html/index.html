@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="up-wrap">
+        <header>
+
+            <div class="signup">Sign up </div>
+            <div class="signin">Sign in  </div>
+        </header>
+
+    </div>
+
+    <div class="settings">
+        <div class="slider-rowgap">
+            <p class="settingsP" id="rowgap">row gap</p>
+            <input type="range" min="1" max="100" value="20" class="slider" id="rowgapsld">
+
+        </div>
+        <div class="slider-colgap">
+            <p class="settingsP" id="colgap">column gap</p>
+            <input type="range" min="1" max="100" value="20" class="slider" id="colgapsld">
+
+        </div>
+        <div class="slider-width">
+            <p class="settingsP" id="width">width</p>
+            <input type="range" min="1" max="100" value="20" class="slider" id="widthsld">
+
+        </div>
+        <div class="slider-height">
+            <p class="settingsP" id="height">height</p>
+            <input type="range" min="1" max="100" value="20" class="slider" id="heightsld">
+        </div>
+
+        <div class="sortcards-color">
+            <p>Sort cards by color</p>
+            <input type="checkbox" id="sortcheckbox" />
+
+        </div>
+    </div>
+
+    <div class="inputnote">
+
+
+        <form>
+            <input id="Title_input" type="text" title="Title" value="Title" />
+            <textarea title="Description" spellcheck="false" id="Desc_input">Some text...</textarea>
+            <input id="Color_input" type="color" title="Color" />
+            <p>Is Marked</p>
+            <input id="IsMarked_input" value="false" type="checkbox" title="IsMarked" />
+            <input id="submit_input" type="submit" />
+        </form>
+
+
+    </div>
+
+    <div class="operasions">
+        <div class="add">add</div>
+        <div class="save">save</div>
+        <div class="changedisplay">change display</div>
+
+        <div class="slider-gap">
+            <input type="range" min="1" max="100" value="20" class="slider" id="gapsld">
+            <p class="pForSliders" id="gap">gap</p>
+
+        </div>
+
+        <div class="reset">reset</div>
+
+    </div>
+
+    <div class="main-wrap">
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

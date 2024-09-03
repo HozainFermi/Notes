@@ -1,0 +1,262 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --card-color: #494545;
+}
+
+body {
+    background-color: rgba(99, 117, 196, 0.849);
+}
+
+.up-wrap {
+    font-size: 1.3em;
+    height: 2.5em;
+    display: flex;
+    color: rgb(237, 229, 229);
+}
+
+header {
+    display: inherit;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+}
+
+.signup {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    margin-top: 0.5em;
+    background-color: rgb(6, 110, 110);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    transition-duration: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .signup:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        color: rgb(51, 48, 48);
+    }
+
+
+.signin {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    margin-top: 0.5em;
+    background-color: rgb(6, 110, 110);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    transition-duration: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .signin:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        color: rgb(51, 48, 48);
+    }
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+    gap: 0.2em;
+    font-size: 1.2em;
+    width: fit-content;
+    z-index: -1;
+}
+
+.settingsP {
+    color: rgb(27, 24, 24);
+}
+
+#rowgap {
+}
+
+.operasions {
+    display: flex;
+    position: sticky;
+    top: 0;
+    font-weight: 500;
+    z-index: 10;
+    color: rgb(229, 231, 231);
+    gap: 2em;
+    margin-top: 2em;
+    font-size: 2em;
+    justify-content: center;
+    background-image: linear-gradient(to right,rgb(6, 110, 110), rgb(44, 60, 202) );
+}
+
+.add {
+    transition: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .add:hover {
+        color: black;
+    }
+
+.save {
+    transition: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .save:hover {
+        color: black;
+    }
+
+.pForSliders {
+    font-size: 0.5em;
+    position: absolute;
+    top: 0;
+}
+
+#gap {
+    align-self: center;
+}
+
+#rowgap {
+    align-self: center;
+}
+
+
+#gapsld {
+    margin-top: 2em;
+}
+
+.changedisplay {
+    transition: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .changedisplay:hover {
+        color: black;
+    }
+
+.reset {
+    transition: 1s;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+    .reset:hover {
+        color: black;
+    }
+
+.sortcards-color input {
+    -webkit-transform: scale(1.5);
+}
+
+.inputnote {
+    margin-left: 45%;
+    margin-top: -10%;
+    width: fit-content;
+    border: #494545 2px solid;
+}
+
+    .inputnote form {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        row-gap: 0.5em;
+    }
+
+    .inputnote p {
+        align-self: center;
+    }
+
+    .inputnote input {
+        align-self: center;
+    }
+
+        .inputnote input[type=checkbox] {
+            -webkit-transform: scale(1.5);
+        }
+
+    .inputnote textarea {
+        resize: none;
+        height: 4em;
+    }
+
+
+.main-wrap {
+    display: flex;
+    background-color: rgb(224, 228, 233);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0px;
+    row-gap: 0px;
+}
+
+.card {
+    background-color: rgb(224, 228, 233);
+    border-radius: 5px;
+    height: fit-content;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    box-shadow: 4px 4px 10px black;
+}
+
+.title {
+    position: relative;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    border: 0 none;
+    color: rgb(229, 231, 231);
+    background-color: var(--card-color);
+    resize: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+    .title::-webkit-scrollbar {
+        width: 5px;
+    }
+
+.textarea {
+    display: inherit;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #8481815e;
+    font-size: 16px;
+    height: 5em;
+}
+
+    .textarea::-webkit-scrollbar {
+        width: 5px;
+    }
+
+.bottomfield {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+    justify-content: center;
+    background-color: var(--card-color);
+    -webkit-user-select: none;
+}
+
+.card_btn {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
